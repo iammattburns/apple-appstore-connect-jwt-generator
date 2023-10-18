@@ -1,13 +1,11 @@
 require("dotenv").config();
 
-var moment = require("moment");
-var jwt = require("jsonwebtoken");
+const moment = require("moment");
+const jwt = require("jsonwebtoken");
 const chalk = require("chalk");
-var fs = require("fs");
+const fs = require("fs");
 
-const os = require("os");
 const privateKey = fs.readFileSync(process.env.PRIVATE_KEY_PATH, "utf8");
-
 const now = moment().utc();
 
 const header = {
@@ -28,7 +26,7 @@ const payload = {
 };
 
 // sign the token with the iss, time, key, and bid with the correct algorithm
-const gen_jwt = jwt.sign(payload, privateKey, {
+const generatedJwt = jwt.sign(payload, privateKey, {
   algorithm: "ES256",
   header,
 });
@@ -36,5 +34,5 @@ const gen_jwt = jwt.sign(payload, privateKey, {
 console.log(chalk.green("------------------------------"));
 console.log(chalk.green("🚀 App Store Connect JWT Token"));
 console.log(chalk.green("------------------------------"));
-console.log(chalk.yellow(gen_jwt));
+console.log(chalk.yellow(generatedJwt));
 console.log(chalk.green("------------- End ------------"));
