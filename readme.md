@@ -1,5 +1,10 @@
 # Apple App Store Connect JWT Generator
 
+<p align="center">
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) <a href='http://makeapullrequest.com'><img alt='PRs Welcome' src='https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=shields'/></a> ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/iammattburns/apple-appstore-connect-jwt-generator)
+
+</p>
 Tool for generating JWT tokens for Apple App Store Connect API.
 
 ## Installation
@@ -9,7 +14,7 @@ Install dependencies: `npm install`
 
 ## Usage
 
-Start the application: `npm start`
+Generate JWT: `npm start`
 
 ## Configuration
 
@@ -39,4 +44,4 @@ Replace the empty values with the appropriate values for your environment.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/) .
