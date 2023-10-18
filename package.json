@@ -16,7 +16,8 @@
   },
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "lint": "eslint . --ext .js"
   },
   "dependencies": {
     "chalk": "^4.1.2",
@@ -24,5 +25,13 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.2.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^3.0.3"
   }
 }
