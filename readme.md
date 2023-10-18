@@ -9,8 +9,8 @@ Tool for generating JWT tokens for Apple App Store Connect API.
 
 ## Installation
 
-Clone the repository: `git clone https://github.com/username/repo.git`
-Install dependencies: `npm install`
+1. Clone the repository: `git clone https://github.com/username/repo.git`
+2. Install dependencies: `npm install`
 
 ## Usage
 
